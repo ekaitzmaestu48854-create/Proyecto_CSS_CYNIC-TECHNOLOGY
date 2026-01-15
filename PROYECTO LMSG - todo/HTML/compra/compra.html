@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>COMPRAS</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="tus palabras clave, aqui">
+	<meta name="description" content="breve descripcion del sitio">
+	<meta name="author" content="autor del documento">
+	<!-- <meta http-equiv="refresh" content="30" />  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../IMAGENES/logo.png">
+</head>
+<body style="background-color: black; color: white;">
+	<header id="headers">
+        <h1>CYNIC TECHNOLOGY</h1> <!-- A nuestra empresa la hemos llamado de esta manera-->
+            <nav>
+                <ul> 
+                    <li><a href="../Inicio.html" style="color: yellow;">INICIO</a> </li><!-- Aqui hemos hecho una lista con todas las paginas que hemos creado -->
+                    <li><a href="../Productos.html" style="color: yellow;"> PRODUCTOS </a></li><!-- Hemos decidido que todos los enlaces sean amarillos -->
+                    <li><a href="../contacto/contacto.html" style="color: yellow;">CONTACTO </a></li>
+                    <li><a href="../sesion/inicio_sesion.html" style="color: yellow;">LOGIN </a></li>
+                    <li><a href="compra.html" style="color: yellow;">COMPRA</a>/<a href="../ventas/ventas.html" style="color: yellow;">VENTA</a></li>
+                </ul>
+            </nav>
+
+    </header>
+    <main>
+		<section>
+		<form action="Gracias_compra.html">
+			<fieldset>
+				 <!--Compra realizada-->
+			<legend>APARTADO DE COMPRAS</legend>
+			<h3>¿Estas registrado? Si aun no lo estas <a href="../sesion/registro.html" style="color: yellow;">REGISTRATE</a></h3>
+			<hr>
+			<p>Selecciona el producto:</p>
+			<select size="1">
+				<option value="select" selected>---Selecciona---</option>
+				<option value="Portatil">Port&aacute;til</option>
+				<option value="Movil">M&oacute;vil</option>
+				<option value="PC">PC</option>
+			</select>
+			<br>
+			<fieldset>
+			<legend>M&eacute;todo de pago:</legend> 
+			<label><input type="radio" name="pago" id="VISA" required>VISA</label>
+			<label><input type="radio" name="pago" id="PAYPAL" required>PAYPAL</label>
+			<label><input type="radio" name="pago" id="MASTERCARD" required>MASTERCARD</label>
+			<br>
+			<br>
+			<label>Numero de Tarjeta: <input type="number" max="16" min="16" placeholder="XXXX-XXXX-XXXX-XXXX" name="Tarjeta" id="Tarjeta" ></label><br><br>
+			<label>CVV:  <input type="number" max="3" min="3" name="CVV" id="CVV" required></label><br><br>
+			<label>CAD:  <input type="date" name="CAD" id="CAD" required></label><br>
+			</fieldset>
+			<fieldset>
+			<legend>Compa&ntilde;ia de trasnporte:</legend> 
+			<label><input type="radio" name="comp" id="GLS" required>GLS</label>
+			<label><input type="radio" name="comp" id="Correos" required>Correos</label>
+			<label><input type="radio" name="comp" id="DHL" required>DHL</label>
+			</fieldset>
+			<p>(Se enviara a tu correo personal una comfirmacion de la compra realizada)</p>
+			<input type="submit" value="Comprar">	
+			</fieldset>
+		</form>
+		</section>
+	</main>
+	</body>
+	 <footer style="color: white; text-align: center;" >
+      
+        <label><a href="https://www.instagram.com"><img src="../../IMAGENES/IG.png" alt="ig" height="50" width="50"></a></label>
+        <label><a href="https://x.com/"><img src="../../IMAGENES/X.png" alt="x" height="50" width="50"></a></label>
+        <label><a href="https://www.facebook.com/"><img src="../../IMAGENES/fb.png" alt="fb" height="50" width="50"></a></label>
+      
+</footer>
+</html>

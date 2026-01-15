@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>CONTACTO</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="tus palabras clave, aqui">
+	<meta name="description" content="breve descripcion del sitio">
+	<meta name="author" content="autor del documento">
+	<!-- <meta http-equiv="refresh" content="30" />  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../IMAGENES/logo.png">
+</head>
+<body style="background-color: black; color: white;">       
+<header id="headers">
+        <h1>CYNIC TECHNOLOGY</h1> <!-- A nuestra empresa la hemos llamado de esta manera-->
+            <nav>
+                <ul> 
+                    <li><a href="../Inicio.html" style="color: yellow;">INICIO</a> </li><!-- Aqui hemos hecho una lista con todas las paginas que hemos creado -->
+                    <li><a href="../Productos.html" style="color: yellow;"> PRODUCTOS </a></li><!-- Hemos decidido que todos los enlaces sean amarillos -->
+                    <li><a href="../contacto/contacto.html" style="color: yellow;">CONTACTO </a></li>
+                    <li><a href="../sesion/inicio_sesion.html" style="color: yellow;">LOGIN </a></li>
+                    <li><a href="../compra/compra.html" style="color: yellow;">COMPRA</a>/<a href="../ventas/ventas.html" style="color: yellow;">VENTA</a></li>
+                </ul>
+            </nav>
+
+    </header>
+ <main><p>Si desea ponerse en contacto con nosotros rellene el siguiente formulario, cuentenos su problema y le atenderemos lo antes posible</p>
+
+
+
+    <form action="gracias.html" method="post">
+        <fieldset>
+        <legend>CONTACTO</legend>
+        
+        <table>
+        <tr>
+            <td>NOMBRE *</td>
+            <td><input type="text" required id="name"></td>
+        </tr> 
+        <tr>
+            <td>EMAIL *</td>
+            <td><input type="text" required id="mail" pattern="[A-Za-z0-9_]{4,}@[A-Za-z0-9_]{4,}.com"></td>
+        </tr>
+        <tr>
+            <td>CONTRASE&Ntilde;A *</td>
+            <td><input type="text" minlength="8" required></td>
+        </tr>
+        <tr>
+            <td>COMENTARIO </td>
+            <td><textarea placeholder="Escribe tu comentario..."></textarea></td>
+        </tr>
+        <tr>
+            <td>TELEFONO</td>   <!-- NO ESTA PUESTO EL REQUIRED MAS QUE NADA PORQUE DA PROBLEMAS LA OPCION "TEL"-->
+            <td><input type="tel" pattern="[0-9](3)-[0-9](6)" placeholder="XXX-XXXXXX" id="tel"></td>
+        </tr>
+        </table>
+            <input type="submit" value="enviar" id="send">
+        </fieldset>
+        </form>
+    </main>
+    <br>
+    </body>
+        <footer style="color: white; text-align: center;" >
+      
+        <a href="https://www.instagram.com"><img src="../../IMAGENES/IG.png" alt="ig" height="50" width="50"></a>
+        <a href="https://x.com/"><img src="../../IMAGENES/X.png" alt="x" height="50" width="50"></a>
+		<a href="https://www.facebook.com/"><img src="../../IMAGENES/fb.png" alt="fb" height="50" width="50"></a>
+      
+</footer>
+</html>
