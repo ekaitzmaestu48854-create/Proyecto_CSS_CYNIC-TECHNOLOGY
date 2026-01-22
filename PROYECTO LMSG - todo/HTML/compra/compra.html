@@ -25,44 +25,65 @@
 
     </header>
     <main>
-		<section>
-		<form action="Gracias_compra.html">
-			<fieldset>
-				 <!--Compra realizada-->
-			<legend>APARTADO DE COMPRAS</legend>
-			<h3>¿Estas registrado? Si aun no lo estas <a href="../sesion/registro.html" style="color: yellow;">REGISTRATE</a></h3>
-			<hr>
-			<p>Selecciona el producto:</p>
-			<select size="1">
-				<option value="select" selected>---Selecciona---</option>
-				<option value="Portatil">Port&aacute;til</option>
-				<option value="Movil">M&oacute;vil</option>
-				<option value="PC">PC</option>
-			</select>
-			<br>
-			<fieldset>
-			<legend>M&eacute;todo de pago:</legend> 
-			<label><input type="radio" name="pago" id="VISA" required>VISA</label>
-			<label><input type="radio" name="pago" id="PAYPAL" required>PAYPAL</label>
-			<label><input type="radio" name="pago" id="MASTERCARD" required>MASTERCARD</label>
-			<br>
-			<br>
-			<label>Numero de Tarjeta: <input type="number" max="16" min="16" placeholder="XXXX-XXXX-XXXX-XXXX" name="Tarjeta" id="Tarjeta" ></label><br><br>
-			<label>CVV:  <input type="number" max="3" min="3" name="CVV" id="CVV" required></label><br><br>
-			<label>CAD:  <input type="date" name="CAD" id="CAD" required></label><br>
-			</fieldset>
-			<fieldset>
-			<legend>Compa&ntilde;ia de trasnporte:</legend> 
-			<label><input type="radio" name="comp" id="GLS" required>GLS</label>
-			<label><input type="radio" name="comp" id="Correos" required>Correos</label>
-			<label><input type="radio" name="comp" id="DHL" required>DHL</label>
-			</fieldset>
-			<p>(Se enviara a tu correo personal una comfirmacion de la compra realizada)</p>
-			<input type="submit" value="Comprar">	
-			</fieldset>
-		</form>
-		</section>
-	</main>
+        <section>
+        <form action="Gracias_compra.html">
+            <fieldset>
+                 <!--Compra realizada-->
+            <legend>APARTADO DE COMPRAS</legend>
+            <h2>¿Estas registrado? Si aun no lo estas <a href="../sesion/registro.html" style="color: yellow;">REGISTRATE</a></h2>
+            <hr>
+            <label for="productos"> Selecciona el producto: </label><br><br>
+            <select id="productos" required>
+                <option value="" selected>---Selecciona---</option>
+                <option value="Portatil">Port&aacute;til</option>
+                <option value="Movil">M&oacute;vil</option>
+                <option value="PC">PC</option>
+            </select>
+            <br><br>
+            <fieldset>
+            <legend>M&eacute;todo de pago:</legend> 
+            <input type="radio" name="pago" id="VISA" required>
+            <label for="VISA"> VISA </label>
+            <input type="radio" name="pago" id="PAYPAL" required>
+            <label for="PAYPAL"> PAYPAL </label>
+            <input type="radio" name="pago" id="MASTERCARD" required>
+            <label for="MASTERCARD"> MASTERCARD </label>
+            <br>
+            <br>
+            <label for="Tarjeta"> Numero de tarjeta: </label>
+            <input type="text" maxlength="19" minlength="19" placeholder="XXXX-XXXX-XXXX-XXXX" name="Tarjeta" id="Tarjeta" size="20" pattern="[0-9\-]{1,19}" required><br><br>
+            <label for="CVV"> CVV </label>
+            <input type="text" maxlength="3" minlength="3" name="CVV" id="CVV" size="5" placeholder="XXX" required><br><br>
+            <label for="CAD"> CAD </label>
+            <input type="date" name="CAD" id="CAD" max="2030-12-31" min="2026-01-01" required>
+            </fieldset><br>
+            <fieldset>
+            <legend>Compa&ntilde;ia de trasnporte:</legend> 
+            <input type="radio" name="comp" id="GLS" required>
+            <label for="GLS"> GLS </label>
+            <input type="radio" name="comp" id="Correos" required>
+            <label for="Correos"> Correos </label>
+            <input type="radio" name="comp" id="DHL" required>
+            <label for="DHL"> DHL </label>
+            </fieldset><br>
+            <fieldset>
+            <label for="Terminos"> Acepto los terminos de seguridad y privacidad </label>
+            <input type="checkbox" name="Terminos" id="Terminos" value="Acepto los terminos y condiciones" required><br><br>
+            <p>Autorizar el envio de comunicaciones electronicas informativas relativas a los productos y/o servicios que ofrece esta empresa</p><br>
+            <select id="terminos" required>
+                <option value="" selected>---Selecciona---</option>
+                <option value="Si">Si, acepto los terminos y condiciones</option>
+                <option value="No">No, no acepto los terminos y condiciones</option>
+            </select><br><br>
+            </fieldset><br>
+            <fieldset>
+            <p>(Se enviara a tu correo personal una confirmacion de la compra realizada)</p>
+            <input type="submit" value="Comprar">   
+            </fieldset>
+            </fieldset>
+        </form>
+        </section>
+    </main>
 	</body>
 	 <footer>
       
