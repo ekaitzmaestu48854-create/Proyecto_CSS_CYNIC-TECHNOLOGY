@@ -1,0 +1,42 @@
+
+
+/*HEADER*/
+
+header{
+text-align: center;
+align-content: center;
+display: block;
+border-bottom: 2px solid white;
+
+}
+
+
+header nav ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
+
+header nav ul li{
+    margin: 20px;
+    list-style: none;
+
+}
+
+header a{
+    color: yellow;
+}
+
+footer{
+text-align: center;
+align-content: center;
+display: block;
+
+border-top: 2px solid white;
+
+}
+
+
