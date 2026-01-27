@@ -11,7 +11,7 @@
   <link rel="icon" href="../../IMAGENES/logo.png">
   <link rel="stylesheet" type="text/css" href="../../CSS/css.css">
 </head>
-<body style="background-color: black; color: white;">
+<body>
   <header id="headers">
         <h1>CYNIC TECHNOLOGY</h1> <!-- A nuestra empresa la hemos llamado de esta manera-->
             <nav>
@@ -25,29 +25,29 @@
             </nav>
 
     </header>
-  <main>
-	<h1>Estas registrado?</h1>
-	<form action="registro.html" method="post">
-	<input type="submit" value="registrarse">
-	</form>
+   <main>
+  <h1>Estas registrado?</h1>
+  <form action="registro.html" method="post">
+  <input type="submit" value="registrarse">
+  </form>
     <form action="../compra/compra.html" method="post" style="text-align: center;">
-		<fieldset>
-		<legend style="text-align: center;"><h1>INICIAR SESIÓN</h1></legend>
-		<table style="text-align: center">
-			<tr>
-            <td><label for="nom_us">Nombre de Usuario / Correo: </label></td>
-            <td><label for="nom_us"><input type="text" name="usuario" required id="nom_us"></label></td>
+    <fieldset>
+    <legend style="text-align: center;"><h1>INICIAR SESIÓN</h1></legend>
+    <table style="text-align: center">
+      <tr>
+            <td><label for="nom_us">Nombre de Usuario: </label></td>
+            <td><input type="text" name="usuario" id="nom_us" maxlength="16" minlength="4" required ></td>
           </tr>
           <tr>
-            <td><label for="passwd">Contrase&ntilde;a</label></td>
-            <td><label for="passwd"><input type="password" required minlength="8" id="passwd" placeholder="xxxx-xxxx"></label></td>
+            <td><label for="passwd">Contrase&ntilde;a: </label></td>
+            <td><input type="password" name="password" minlength="8" maxlength="16" id="passwd" required></td>
           </tr>
-		</table>
-		
-			<p><input type="submit" value="Entrar"></p> 
-			
-		</fieldset>
-		</form>
+    </table>
+    
+      <p><input type="submit" value="Entrar"></p> 
+      
+    </fieldset>
+    </form>
   </main>
   <br>
 <footer>

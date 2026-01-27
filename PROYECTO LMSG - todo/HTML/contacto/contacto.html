@@ -11,7 +11,7 @@
 	<link rel="icon" href="../../IMAGENES/logo.png">
     <link rel="stylesheet" type="text/css" href="../../CSS/css.css">
 </head>
-<body style="background-color: black; color: white;">       
+<body>       
 <header id="headers">
         <h1>CYNIC TECHNOLOGY</h1> <!-- A nuestra empresa la hemos llamado de esta manera-->
             <nav>
@@ -25,37 +25,34 @@
             </nav>
 
     </header>
- <main><p>Si desea ponerse en contacto con nosotros rellene el siguiente formulario, cuentenos su problema y le atenderemos lo antes posible</p>
-
+ <main class="contacto"><p>Si desea ponerse en contacto con nosotros rellene el siguiente formulario, cuentenos su problema y le atenderemos lo antes posible</p>
 
 
     <form action="gracias.html" method="post">
         <fieldset>
         <legend>CONTACTO</legend>
-        
-        <table>
-        <tr>
-            <td>NOMBRE *</td>
-            <td><input type="text" required id="name"></td>
-        </tr> 
-        <tr>
-            <td>EMAIL *</td>
-            <td><input type="text" required id="mail" pattern="[A-Za-z0-9_]{4,}@[A-Za-z0-9_]{4,}.{A-Aa-z}{2,}"></td>
-        </tr>
-        <tr>
-            <td>CONTRASE&Ntilde;A *</td>
-            <td><input type="text" minlength="8" required></td>
-        </tr>
-        <tr>
-            <td>COMENTARIO </td>
-            <td><textarea placeholder="Escribe tu comentario..."></textarea></td>
-        </tr>
-        <tr>
-            <td>TELEFONO</td>   <!-- NO ESTA PUESTO EL REQUIRED MAS QUE NADA PORQUE DA PROBLEMAS LA OPCION "TEL"-->
-            <td><input type="tel" pattern="[0-9]{3}-[0-9]{6}" placeholder="XXX-XXXXXX" id="tel"></td>
-        </tr>
-        </table>
-            <input type="submit" value="enviar" id="send">
+            <label for="name" name="name">NOMBRE *</label>
+            <input type="text" required id="name" name="name">
+            <br>
+            <br>
+            <label for="mail" name="mail">EMAIL *</label>
+            <input type="mail" required id="mail" pattern="[A-Za-z0-9_]{4,}@[A-Za-z0-9_]{4,}\.[A-Aa-z]{2,}" name="email">
+            <br>
+            <br>
+            <label for="passwd" name="passwd">CONTRASE&Ntilde;A *</label>
+            <input type="text" minlength="8" required id="passwd" name="passwd">
+            <br>
+            <br>
+            <label for="comentario" name="comentario">COMENTARIO </label>
+            <textarea placeholder="Escribe tu comentario..." name="comentario" id="comentario"></textarea>
+            <br>
+            <br>
+            <br>
+            <label for="tel" name="tel">TELEFONO (FORMATO XXX-XXXXXX)</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{6}" placeholder="XXX-XXXXXX" id="tel" name="tel">
+            <br>
+            <br>
+            <input type="submit" value="enviar" id="send" name="send">
         </fieldset>
         </form>
     </main>
