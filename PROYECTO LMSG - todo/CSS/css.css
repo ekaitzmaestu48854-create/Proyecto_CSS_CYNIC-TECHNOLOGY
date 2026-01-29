@@ -100,8 +100,133 @@ border-top: 2px solid white;
     color: #C0C0C0;
 }
 
+/*Productos*/
+
+.productos article{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}
+
+.productos section{
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.productos section img {
+    margin: 15px 5px 5px;
+}
+
+/*Registro*/
+
+.registro{
+    align-items: center;
+    text-align: center;
+    display: block;
+    align-content: center;
+}
 
 
+
+.registro fieldset{
+    width: 25%;
+    border-radius: 5px;
+    margin: 3em 0em 3em 35em;
+
+}
+
+.registro table{
+    margin: 15px;
+}
+
+
+.registro input {
+    border-radius: 5px;
+}
+
+/*graciasregistro*/
+
+.graciasregistro{
+    text-align: center;
+    margin: 3em 0 3em 0;
+}
+
+/*iniciosesion*/
+
+.iniciosesion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.iniciosesion fieldset{
+    border-radius: 5px;
+    margin: 2em 0em 3em 0em;
+}
+
+.iniciosesion input {
+    border-radius: 5px;
+}
+
+/*contacto*/
+
+.contacto{
+    text-align: center;
+    align-items: center;
+}
+
+.contacto fieldset{
+    width: 25%;
+    border-radius: 5px;
+    margin: 2em 0em 3em 35em;
+}
+
+
+/*graciascontacto*/
+
+.graciascontacto{
+    text-align: center;
+    margin: 3em 0 3em 0;
+}
+
+/*compra*/
+
+.compra{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 0 16em;
+}
+
+
+.compra fieldset{
+    width: 70%;
+    border-radius: 5px;
+    margin: 1em 0 1em 0;
+}
+
+.compra2 {
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/*graciascompra*/
+
+
+.graciascompras{
+    text-align: center;
+    margin: 3em 0 3em 0;
+}
 
 
 

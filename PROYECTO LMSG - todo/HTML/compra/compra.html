@@ -25,7 +25,7 @@
             </nav>
 
     </header>
-    <main>
+    <main class="compra">
         <section>
         <form action="Gracias_compra.html">
             <fieldset>
@@ -38,7 +38,7 @@
                 <option value="Movil">M&oacute;vil</option>
                 <option value="PC">PC</option>
             </select>
-            <br><br>
+            <section class="compra2">
             <fieldset>
             <legend>M&eacute;todo de pago:</legend> 
             <input type="radio" name="pago" id="VISA" required>
@@ -47,15 +47,13 @@
             <label for="PAYPAL"> PAYPAL </label>
             <input type="radio" name="pago" id="MASTERCARD" required>
             <label for="MASTERCARD"> MASTERCARD </label>
-            <br>
-            <br>
             <label for="Tarjeta"> Numero de tarjeta: </label>
             <input type="text" maxlength="19" minlength="19" placeholder="XXXX-XXXX-XXXX-XXXX" name="Tarjeta" id="Tarjeta" size="20" pattern="[0-9\-]{1,19}" required><br><br>
             <label for="CVV"> CVV </label>
             <input type="text" maxlength="3" minlength="3" name="CVV" id="CVV" size="5" placeholder="XXX" required><br><br>
             <label for="CAD"> CAD </label>
             <input type="date" name="CAD" id="CAD" max="2030-12-31" min="2026-01-01" required>
-            </fieldset><br>
+            </fieldset>
             <fieldset>
             <legend>Compa&ntilde;ia de trasnporte:</legend> 
             <input type="radio" name="comp" id="GLS" required>
@@ -64,7 +62,7 @@
             <label for="Correos"> Correos </label>
             <input type="radio" name="comp" id="DHL" required>
             <label for="DHL"> DHL </label>
-            </fieldset><br>
+            </fieldset>
             <fieldset>
             <label for="Terminos"> Acepto los terminos de seguridad y privacidad </label>
             <input type="checkbox" name="Terminos" id="Terminos" value="Acepto los terminos y condiciones" required><br><br>
@@ -73,13 +71,14 @@
                 <option value="" selected>---Selecciona---</option>
                 <option value="Si">Si, acepto los terminos y condiciones</option>
                 <option value="No">No, no acepto los terminos y condiciones</option>
-            </select><br><br>
-            </fieldset><br>
+            </select>
+            </fieldset>
             <fieldset>
             <p>(Se enviara a tu correo personal una confirmacion de la compra realizada)</p>
             <input type="submit" value="Comprar">   
             </fieldset>
             </fieldset>
+        </section>
         </form>
         </section>
     </main>

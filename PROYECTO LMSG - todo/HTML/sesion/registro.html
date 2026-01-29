@@ -25,30 +25,35 @@
             </nav>
 
     </header>
+    <main class="registro">
+        <article class="1">
     <form action="gracias_registro.html" method="post">
 			<fieldset>
                 <legend style="text-align: center;">REGISTRO</legend>
             <table>
                 <tr>
                     <td><label for="nom_reg">NOMBRE * : </label></td> 
-                    <td><label for="nom_reg"><input type="text" name="name" id="nom_reg" required></label></td>
+                    <td><label for="nom_reg"><input type="text" name="name" id="nom_reg" size="30" required></label></td>
                 </tr>
                 <tr>
                     <td><label for="ape_reg">APELLIDO * : </label></td> 
-                    <td><label for="ape_reg"><input type="text" name="lastmame" id="ape_reg" required></label></td>
+                    <td><label for="ape_reg"><input type="text" name="lastmame" id="ape_reg" size="30" required></label></td>
                 </tr>
                    <tr>
                     <td><label for="mail_reg">CORREO * : </label></td> 
-                    <td><label for="mail_reg"><input type="text" required id="mail_reg" pattern="[A-Za-z0-9_]{4,}@[A-Za-z0-9_]{4,}.com"></label></td>
+                    <td><label for="mail_reg"><input type="text" required id="mail_reg"  size="30" pattern="[A-Za-z0-9_]{4,}@[A-Za-z0-9_]{4,}.com"></label></td>
                    </tr> 
                    <tr>
                     <td><label for="tel_reg">TELEFONO  : </label> </td>
-                    <td><label for="tel_reg"><input type="tel" name="tel" id="tel_reg" ></label></td>
+                    <td><label for="tel_reg"><input type="tel" name="tel" id="tel_reg" size="30"></label></td>
                    </tr>
             </table>
-                            <input type="submit" value="enviar">
+                            <input type="submit" value="enviar"> 
+                            <input type="reset" value="borrar">
             </fieldset>
-            <br>
+            </form>
+        </article>
+        
 <footer>
       
         <a href="https://www.instagram.com"><img src="../../IMAGENES/IG.png" alt="ig" height="50" width="50"></a>
@@ -57,6 +62,6 @@
         <p>&copy; Cynic - Empresa de inform&aacute;tica</p> 
       
 </footer>
-        </form>
+        
 </body>
 </html>
