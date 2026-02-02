@@ -56,6 +56,8 @@ border-top: 2px solid white;
 
 }
 
+
+
 /*INDEX*/
 
 .index {
@@ -228,6 +230,17 @@ border-top: 2px solid white;
     margin: 3em 0 3em 0;
 }
 
+/*Trabajadores*/
 
+.trabajadores article{
+    border: 2px solid white;
+    margin:  1em 20% 1em;
+    border-radius: 10px;
+
+}
+
+.trabajadores img{
+    border-radius: 10px;
+}
 
 
